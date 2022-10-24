@@ -14,9 +14,9 @@ export default defineConfig({
   // 代理配置
   server: {
     proxy: {
-      // 代理所有 /api 的请求
-      '/api': {
-        target: 'https://api.imooc-front.lgdsunday.club',
+      // 代理所有 /v1 的请求
+      '/v1': {
+        target: 'https://api.pexels.com',
         // 跨域
         changeOrigin: true,
       },

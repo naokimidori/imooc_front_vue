@@ -3,13 +3,13 @@
 </template>
 
 <script setup>
-import { getCategory } from '@/api/category'
+import { getRecommendPic } from '@/api/picture'
 
-const getCategoryData = async () => {
-  const res = await getCategory()
+const getRecommendPicData = async () => {
+  const res = await getRecommendPic()
   console.log(res)
 }
 
-getCategoryData()
+getRecommendPicData()
 </script>
 <style lang="scss" scoped></style>
